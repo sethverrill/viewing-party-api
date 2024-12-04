@@ -2,10 +2,11 @@ class Api::V1::MoviesController < ApplicationController
 
   def index
     api = Rails.application.credentials[:tmdb][:api_key]
+    Rails.logger.info("TMDB API Key: #{api}")
     conn = Faraday.new(url: "https://api.themoviedb.org/3")
     response = conn.get("/movie/top_rated", {
       api_key: api
-    })
+    })    
 
     json = JSON.parse(response.body, symbolize_names: true)
     top_20 = json[:results].first(20)
