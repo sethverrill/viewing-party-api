@@ -7,15 +7,17 @@ class MovieSerializer
   end
 
   def serializable_hash
-    @movie_data.map do |movie|
-      {
-        id: movie[:id].to_s,
-        type: 'movie',
-        attributes: {
-          title: movie[:title],
-          vote_average: movie[:vote_average]
+    {
+      data: @movie_data.map do |movie|
+        {
+          id: movie[:id].to_s,
+          type: 'movie',
+          attributes: {
+            title: movie[:title],
+            vote_average: movie[:vote_average]
+          }
         }
-      }
-    end
+      end
+    }
   end
 end
