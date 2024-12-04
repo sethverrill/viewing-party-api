@@ -26,6 +26,7 @@ class Api::V1::MoviesController < ApplicationController
     end
 
     json = JSON.parse(response.body, symbolize_names: true)
-    render json: MovieSerializer.new(json[:results].first(20)).serializable_hash.to_json
+    movies = json[:results].first(20)
+    render json: MovieSerializer.new(movies).serializable_hash.to_json
   end
 end
