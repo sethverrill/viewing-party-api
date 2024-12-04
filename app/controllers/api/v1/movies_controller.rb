@@ -16,16 +16,6 @@ class Api::V1::MoviesController < ApplicationController
     })
 
     json = JSON.parse(response.body, symbolize_names: true)
-    top_20 = json[:results].first(20)
-
-    movies = top_20.map do |movie_data|
-      Movie.new(
-        id: movie_data[:id],
-        title: movie_data[:title],
-        vote_average: movie_data[:vote_average]
-      )
-    end
-
-    render json: MovieSerializer.new(movies).serializable_hash.to_json
+    render json: MovieSerializer.new(json[:results].first(20)).serializable_hash.to_json
   end
 end
