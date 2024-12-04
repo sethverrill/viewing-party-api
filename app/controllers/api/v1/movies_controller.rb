@@ -1,4 +1,4 @@
-class MoviesController < ApplicationController
+class Api::V1::MoviesController < ApplicationController
 
   def index
     api = Rails.application.credentials[:tmdb][:api_key]
