@@ -1,7 +1,7 @@
 class Api::V1::MoviesController < ApplicationController
   def index
     api = Rails.application.credentials.tmdb[:api_read_access_token]
-    query = params[:query]
+    query = params[:query]&.strip
 
     conn = Faraday.new(url: "https://api.themoviedb.org/3") do |f|
       f.headers['Authorization'] = "Bearer #{api}"
