@@ -52,4 +52,8 @@ group :development do
   # gem "spring"
 end
 
-gem 'simplecov', require: false, group: :test
+group :test do
+  gem 'simplecov', require: false
+  gem "webmock"
+  gem "vcr"
+end
