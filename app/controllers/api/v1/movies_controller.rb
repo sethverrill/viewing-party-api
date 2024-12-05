@@ -30,6 +30,7 @@ class Api::V1::MoviesController < ApplicationController
       render json: { error: "Failed to fetch movies: #{response.status}" }, status: :bad_request
     end
   end
+end
 #   before_action :tmdb_connection
 #   def index
 #     response = @conn.get('movie/top_rated', language: 'en-US', page: 1)
