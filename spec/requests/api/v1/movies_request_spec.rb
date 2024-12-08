@@ -6,9 +6,9 @@ RSpec.describe "Movies Endpoint" do
       VCR.use_cassette("top_20_movies") do    
         get "/api/v1/movies"
 
-        expect(response).to be_successful
+        expect(response).to have_http_status(:ok)
         json = JSON.parse(response.body, symbolize_names: true)[:data]
-
+        
         expect(json).to be_an(Array)
         expect(json.size).to be <= 20
         expect(json.first).to have_key(:id)
@@ -21,7 +21,8 @@ RSpec.describe "Movies Endpoint" do
     it "has a functioning search" do
       VCR.use_cassette("lotr_search") do
         get "/api/v1/movies", params: { query: 'Lord of the Rings' }
-        expect(response).to be_successful
+        
+        expect(response).to have_http_status(:ok)
         json = JSON.parse(response.body, symbolize_names: true)[:data]
 
         expect(json).to be_an(Array)
