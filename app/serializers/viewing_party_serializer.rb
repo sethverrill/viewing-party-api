@@ -1,12 +1,12 @@
 class ViewingPartySerializer
   include JSONAPI::Serializer
-  attributes :name, :start_time, :end_time, movie_id, movie_title
+  attributes :name, :start_time, :end_time, :movie_id, :movie_title
 
-  attribute :host_do |viewing_party|
-    host_user = viewing_party.viewing_party_users.find_by(host: :true)&.user 
+  attribute :host do |viewing_party|
+    host_user = viewing_party.viewing_party_users.find_by(host: true)&.user
     {
       id: host_user.id,
-      name: host_user.name
+      name: host_user.name,
       username: host_user.username
     } if host_user
   end

@@ -3,7 +3,7 @@ class MovieSerializer
   attributes :id, :title, :vote_average
 
   def initialize(movie_data)
-    @movie_data = Array(movie_data)
+    @movie_data = Array.wrap(movie_data)
   end
 
   def serializable_hash
