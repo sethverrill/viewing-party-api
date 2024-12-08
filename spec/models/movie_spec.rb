@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Movie, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "Validations" do
+    it { should validate_presence_of(:title) }
+    it { should validate_presence_of(:vote_average) }
+    it { should validate_presence_of(:tmdb_id) }
+  end
 end

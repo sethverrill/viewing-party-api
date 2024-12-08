@@ -27,34 +27,34 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 06 Dec 2024 21:40:23 GMT
+      - Sun, 08 Dec 2024 22:20:42 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=20802
+      - public, max-age=20648
       X-Memc:
       - HIT
       X-Memc-Key:
       - 71dac1445423885392f0bd6d5bbbcfe0
       X-Memc-Age:
-      - '7380'
+      - '4779'
       X-Memc-Expires:
-      - '20802'
+      - '20648'
       Etag:
-      - W/"ca361e87c6c43df1d64627a692297bb6"
+      - W/"05e6d3eabec58b82cb345be15c1af6f2"
       Vary:
       - Accept-Encoding,accept-encoding
       - Origin
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 96725c0e4ced177a38df871e7cc48a4a.cloudfront.net (CloudFront)
+      - 1.1 73dca6335fec334b6898baa021fe28e0.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - ORD51-C4
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - XxdD1cfBLoKoYsPxOFHLlAp1G1B4JffZj5eomnCPWLTOWHAjuCjtrw==
+      - FutK3VXYCf3P3OiZsV6Papr3K1eMqbBnNrmnmCnNGlRM5RlLGA1GbA==
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg","genre_ids":[12,14,28],"id":120,"original_language":"en","original_title":"The
@@ -63,16 +63,16 @@ http_interactions:
         his home in order to keep it from falling into the hands of its evil creator.
         Along the way, a fellowship is formed to protect the ringbearer and make sure
         that the ring arrives at its final destination: Mt. Doom, the only place where
-        it can be destroyed.","popularity":182.668,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
-        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.416,"vote_count":25220},{"adult":false,"backdrop_path":"/4ZXzO32rKk5bSoDZA6KpTzVJA.jpg","genre_ids":[16,14,28],"id":839033,"original_language":"en","original_title":"The
+        it can be destroyed.","popularity":180.649,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
+        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.416,"vote_count":25230},{"adult":false,"backdrop_path":"/4ZXzO32rKk5bSoDZA6KpTzVJA.jpg","genre_ids":[16,14],"id":839033,"original_language":"en","original_title":"The
         Lord of the Rings: The War of the Rohirrim","overview":"183 years before the
         events chronicled in the original trilogy, a sudden attack by Wulf, a clever
         and ruthless Dunlending lord seeking vengeance for the death of his father,
         forces Helm Hammerhand and his people to make a daring last stand in the ancient
         stronghold of the Hornburg. Finding herself in an increasingly desperate situation,
         Héra, the daughter of Helm, must summon the will to lead the resistance against
-        a deadly enemy intent on their total destruction.","popularity":267.466,"poster_path":"/qXKFlGX9n66zd4q0oWztPuvRD9D.jpg","release_date":"2024-12-05","title":"The
-        Lord of the Rings: The War of the Rohirrim","video":false,"vote_average":7.9,"vote_count":7},{"adult":false,"backdrop_path":"/5JrZAtyk3LwiiAWLW0kwz41XZJC.jpg","genre_ids":[12,14,28],"id":122,"original_language":"en","original_title":"The
+        a deadly enemy intent on their total destruction.","popularity":309.79,"poster_path":"/qXKFlGX9n66zd4q0oWztPuvRD9D.jpg","release_date":"2024-12-05","title":"The
+        Lord of the Rings: The War of the Rohirrim","video":false,"vote_average":7.4,"vote_count":13},{"adult":false,"backdrop_path":"/5JrZAtyk3LwiiAWLW0kwz41XZJC.jpg","genre_ids":[12,14,28],"id":122,"original_language":"en","original_title":"The
         Lord of the Rings: The Return of the King","overview":"As armies mass for
         a final battle that will decide the fate of the world--and powerful, ancient
         forces of Light and Dark compete to determine the outcome--one member of the
@@ -80,8 +80,8 @@ http_interactions:
         Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit,
         Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched
         Gollum, ventures deep into the very dark heart of Mordor on his seemingly
-        impossible quest to destroy the Ring of Power.​","popularity":195.079,"poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","release_date":"2003-12-17","title":"The
-        Lord of the Rings: The Return of the King","video":false,"vote_average":8.482,"vote_count":24261},{"adult":false,"backdrop_path":"/mshaKLtPUxcDBhzau6qiObEblhL.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
+        impossible quest to destroy the Ring of Power.​","popularity":168.203,"poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","release_date":"2003-12-17","title":"The
+        Lord of the Rings: The Return of the King","video":false,"vote_average":8.482,"vote_count":24270},{"adult":false,"backdrop_path":"/mshaKLtPUxcDBhzau6qiObEblhL.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
         Lord of the Rings: The Two Towers","overview":"Frodo Baggins and the other
         members of the Fellowship continue on their sacred quest to destroy the One
         Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower
@@ -89,26 +89,26 @@ http_interactions:
         at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking
         to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn
         search for the orc-captured Merry and Pippin. All along, nefarious wizard
-        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":102.336,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
-        Lord of the Rings: The Two Towers","video":false,"vote_average":8.399,"vote_count":21891},{"adult":false,"backdrop_path":"/x9McE1WFKnAHludiY7xfd7modDC.jpg","genre_ids":[12,16,14],"id":123,"original_language":"en","original_title":"The
+        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":115.404,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
+        Lord of the Rings: The Two Towers","video":false,"vote_average":8.399,"vote_count":21898},{"adult":false,"backdrop_path":"/x9McE1WFKnAHludiY7xfd7modDC.jpg","genre_ids":[12,16,14],"id":123,"original_language":"en","original_title":"The
         Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
-        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":38.737,"poster_path":"/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg","release_date":"1978-11-15","title":"The
-        Lord of the Rings","video":false,"vote_average":6.582,"vote_count":907},{"adult":false,"backdrop_path":"/1mtjTIcwlo6YmGrJEr7fnGeITx3.jpg","genre_ids":[14,12,18],"id":1016184,"original_language":"en","original_title":"The
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":41.784,"poster_path":"/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg","release_date":"1978-11-15","title":"The
+        Lord of the Rings","video":false,"vote_average":6.581,"vote_count":908},{"adult":false,"backdrop_path":"/1mtjTIcwlo6YmGrJEr7fnGeITx3.jpg","genre_ids":[14,12,18],"id":1016184,"original_language":"en","original_title":"The
         Lord of the Rings: The Rings of Power Global Fan Screening","overview":"An
         edited version of the first two episodes of The Lord of the Rings: The Rings
         of Power, shown exclusively to fans in cinemas around the world in August
         2022. In a time of relative peace, an ensemble cast of characters confronts
-        the re-emergence of evil to Middle-earth.","popularity":24.842,"poster_path":"/toEUQXyDut4QecjC3RAdBoDVlUe.jpg","release_date":"2022-08-31","title":"The
+        the re-emergence of evil to Middle-earth.","popularity":24.184,"poster_path":"/toEUQXyDut4QecjC3RAdBoDVlUe.jpg","release_date":"2022-08-31","title":"The
         Lord of the Rings: The Rings of Power Global Fan Screening","video":true,"vote_average":7.053,"vote_count":38},{"adult":false,"backdrop_path":null,"genre_ids":[99,10770,14,12],"id":453779,"original_language":"en","original_title":"A
         Passage to Middle-Earth: Making of ''Lord of the Rings''","overview":"The
-        making of Peter Jackson''s adaptation of Tolkien''s classic work.","popularity":4.573,"poster_path":"/hvGMNY2de55UZDDX5EYYKtm38DV.jpg","release_date":"2001-12-09","title":"A
+        making of Peter Jackson''s adaptation of Tolkien''s classic work.","popularity":6.59,"poster_path":"/hvGMNY2de55UZDDX5EYYKtm38DV.jpg","release_date":"2001-12-09","title":"A
         Passage to Middle-Earth: Making of ''Lord of the Rings''","video":false,"vote_average":6.833,"vote_count":9},{"adult":false,"backdrop_path":"/rNteideXyAZabqh7IMiEIFM9TBQ.jpg","genre_ids":[14],"id":1090869,"original_language":"en","original_title":"Lord
-        of the Rings: The Hunt for Gollum","overview":"A new film based on the novels.","popularity":4.315,"poster_path":"/544AyItQjukqCEqLPmdSjsRJDN4.jpg","release_date":"","title":"Lord
+        of the Rings: The Hunt for Gollum","overview":"A new film based on the novels.","popularity":4.91,"poster_path":"/544AyItQjukqCEqLPmdSjsRJDN4.jpg","release_date":"","title":"Lord
         of the Rings: The Hunt for Gollum","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":1035526,"original_language":"en","original_title":"Forging
         Through the Darkness: The Ralph Bakshi Vision for ''The Lord of the Rings''","overview":"A
         deep look at how Ralph Bakshi made his version of Lord of the Rings (1978).
         With Ralph Bakshi, Victoria Bakshi-Yudis, Chris Conkling, Timothy Galfas,
-        Scott Kleinman, & Tom Tataranowicz.","popularity":4.273,"poster_path":null,"release_date":"2010-04-10","title":"Forging
+        Scott Kleinman, & Tom Tataranowicz.","popularity":3.72,"poster_path":null,"release_date":"2010-04-10","title":"Forging
         Through the Darkness: The Ralph Bakshi Vision for ''The Lord of the Rings''","video":false,"vote_average":10.0,"vote_count":1},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":651342,"original_language":"en","original_title":"J.R.R.
         Tolkien and the Birth of \"The Lord of the Rings\" and \"The Hobbit\"","overview":"In
         a house in Oxford lived a remarkable man called J.R.R. Tolkien who told stories
@@ -123,9 +123,9 @@ http_interactions:
         of Industrial Birmingham, the dreaming spires of Oxford to the World War I
         trenches of the blood soaked Somme; this is the story of the quintessential
         English College Professor who made epic mythology and legend accessible to
-        one and all.","popularity":1.067,"poster_path":"/jp0NQtIQTwen5vHBNcCK2iLKoY7.jpg","release_date":"2004-12-31","title":"J.R.R.
+        one and all.","popularity":1.014,"poster_path":"/jp0NQtIQTwen5vHBNcCK2iLKoY7.jpg","release_date":"2004-12-31","title":"J.R.R.
         Tolkien and the Birth of \"The Lord of the Rings\" and \"The Hobbit\"","video":false,"vote_average":5.583,"vote_count":12},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":945739,"original_language":"en","original_title":"Darla''s
-        Book Club: Discussing the Lord of the Rings","overview":"","popularity":0.13,"poster_path":"/cBdXohO3uOFnhI0NGs6TOpqabBt.jpg","release_date":"2021-11-26","title":"Darla''s
+        Book Club: Discussing the Lord of the Rings","overview":"","popularity":0.109,"poster_path":"/cBdXohO3uOFnhI0NGs6TOpqabBt.jpg","release_date":"2021-11-26","title":"Darla''s
         Book Club: Discussing the Lord of the Rings","video":false,"vote_average":10.0,"vote_count":2},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":296260,"original_language":"en","original_title":"Master
         of the Rings: The Unauthorized Story Behind J.R.R. Tolkien''s \"Lord of the
         Rings\"","overview":"This documentary examines the social and cultural underpinnings
@@ -139,7 +139,7 @@ http_interactions:
         with the book''s illustrators, the brothers Hildebrandt, speak to the power
         of the imagery in the classic story. Scholars, Tolkien''s children, and the
         author himself provide insight into the mythic themes and the spell they have
-        cast over the vast readership of The Lord of the Rings.","popularity":2.157,"poster_path":"/7fzIaIcpj4f0O3IHE65qGqlNcuL.jpg","release_date":"2001-12-04","title":"Master
+        cast over the vast readership of The Lord of the Rings.","popularity":1.838,"poster_path":"/7fzIaIcpj4f0O3IHE65qGqlNcuL.jpg","release_date":"2001-12-04","title":"Master
         of the Rings: The Unauthorized Story Behind J.R.R. Tolkien''s \"Lord of the
         Rings\"","video":false,"vote_average":8.0,"vote_count":4},{"adult":false,"backdrop_path":"/bf9zr6vJ9FRLqUvkDcewq0YJyCL.jpg","genre_ids":[10402],"id":155586,"original_language":"en","original_title":"Creating
         the Lord of the Rings Symphony","overview":"Creating The Lord of the Rings
@@ -150,32 +150,32 @@ http_interactions:
         Lord of the Rings the Musical - Original London Production - Promotional Documentary","overview":"This
         15-minute DVD follows the adaptation of LOTR for the stage, and features rehearsal
         and show footage of the initial production in Toronto as well as interviews
-        with the creative team now preparing for the London production.","popularity":2.765,"poster_path":"/xYeqKHapsIH9uPSrzoBPUvMtE0M.jpg","release_date":"2007-01-01","title":"The
-        Lord of the Rings the Musical - Original London Production - Promotional Documentary","video":false,"vote_average":10.0,"vote_count":1},{"adult":false,"backdrop_path":"/fBzwSM5zl4xp9L3rFu1PihmY0vh.jpg","genre_ids":[16,14,12],"id":1361,"original_language":"en","original_title":"The
-        Return of the King","overview":"Two Hobbits struggle to destroy the Ring in
-        Mount Doom while their friends desperately fight evil Lord Sauron''s forces
-        in a final battle.","popularity":22.234,"poster_path":"/sC5j2cUgGe1IQ33WdLYx6G4KiDm.jpg","release_date":"1980-05-11","title":"The
-        Return of the King","video":false,"vote_average":6.393,"vote_count":197},{"adult":false,"backdrop_path":"/bCDn6Bzfjjiov7Reu5MVZIhVQJm.jpg","genre_ids":[10751,14,16,12,10770],"id":1362,"original_language":"en","original_title":"The
+        with the creative team now preparing for the London production.","popularity":4.863,"poster_path":"/xYeqKHapsIH9uPSrzoBPUvMtE0M.jpg","release_date":"2007-01-01","title":"The
+        Lord of the Rings the Musical - Original London Production - Promotional Documentary","video":false,"vote_average":10.0,"vote_count":1},{"adult":false,"backdrop_path":"/bCDn6Bzfjjiov7Reu5MVZIhVQJm.jpg","genre_ids":[10751,14,16,12,10770],"id":1362,"original_language":"en","original_title":"The
         Hobbit","overview":"Bilbo Baggins the Hobbit was just minding his own business,
         when his occasional visitor Gandalf the Wizard drops in one night. One by
         one, a whole group of dwarves drop in, and before he knows it, Bilbo has joined
         their quest to reclaim their kingdom, taken from them by the evil dragon Smaug.
         The only problem is that Gandalf has told the dwarves that Bilbo is an expert
-        burglar, but he isn''t...","popularity":19.569,"poster_path":"/2ohvyMPhvjftLrM6S6Ljr6QrL0u.jpg","release_date":"1977-11-27","title":"The
-        Hobbit","video":false,"vote_average":6.532,"vote_count":312},{"adult":false,"backdrop_path":null,"genre_ids":[99,10770],"id":573089,"original_language":"en","original_title":"The
-        Quest Fulfilled: A Director''s Vision","overview":"","popularity":1.571,"poster_path":"/mGtbuCLQZ3xI02juytVRXHOQJoD.jpg","release_date":"2003-12-26","title":"The
+        burglar, but he isn''t...","popularity":21.965,"poster_path":"/2ohvyMPhvjftLrM6S6Ljr6QrL0u.jpg","release_date":"1977-11-27","title":"The
+        Hobbit","video":false,"vote_average":6.532,"vote_count":312},{"adult":false,"backdrop_path":"/fBzwSM5zl4xp9L3rFu1PihmY0vh.jpg","genre_ids":[16,14,12],"id":1361,"original_language":"en","original_title":"The
+        Return of the King","overview":"Two Hobbits struggle to destroy the Ring in
+        Mount Doom while their friends desperately fight evil Lord Sauron''s forces
+        in a final battle.","popularity":27.419,"poster_path":"/sC5j2cUgGe1IQ33WdLYx6G4KiDm.jpg","release_date":"1980-05-11","title":"The
+        Return of the King","video":false,"vote_average":6.4,"vote_count":198},{"adult":false,"backdrop_path":null,"genre_ids":[99,10770],"id":573089,"original_language":"en","original_title":"The
+        Quest Fulfilled: A Director''s Vision","overview":"","popularity":2.219,"poster_path":"/mGtbuCLQZ3xI02juytVRXHOQJoD.jpg","release_date":"2003-12-26","title":"The
         Quest Fulfilled: A Director''s Vision","video":false,"vote_average":6.4,"vote_count":6},{"adult":false,"backdrop_path":"/2Qq7xWzUH0on9YHrcdpLkXTjQgn.jpg","genre_ids":[99],"id":622236,"original_language":"en","original_title":"The
         Making of The Two Towers","overview":"A behind-the-scenes documentary on the
         making of \"The Lord of the Rings: The Two Towers.\" Created by filmmaker
         Costa Botes (personally selected by Peter Jackson), this documentary uses
         raw footage to reveal the inside story on how the greatest adventure film
-        franchise was born.","popularity":1.171,"poster_path":"/hrYkh9tiaEvtaOasIIHnOnvhkec.jpg","release_date":"2003-04-01","title":"The
+        franchise was born.","popularity":1.634,"poster_path":"/hrYkh9tiaEvtaOasIIHnOnvhkec.jpg","release_date":"2003-04-01","title":"The
         Making of The Two Towers","video":false,"vote_average":8.6,"vote_count":8},{"adult":false,"backdrop_path":"/12rwHElCwSXRpLBtDS2Ef5zpol8.jpg","genre_ids":[99],"id":622231,"original_language":"en","original_title":"The
         Making of The Fellowship of the Ring","overview":"A behind-the-scenes documentary
         on the making of \"The Lord of the Rings: The Fellowship of the Ring.\" Created
         by filmmaker Costa Botes (personally selected by Peter Jackson), this documentary
         uses raw footage to reveal the inside story on how the greatest adventure
-        film franchise was born.","popularity":3.703,"poster_path":"/9vdxS5MUDzD0Aoi2SrAEY3VxQ8J.jpg","release_date":"2002-04-01","title":"The
+        film franchise was born.","popularity":3.111,"poster_path":"/9vdxS5MUDzD0Aoi2SrAEY3VxQ8J.jpg","release_date":"2002-04-01","title":"The
         Making of The Fellowship of the Ring","video":false,"vote_average":8.9,"vote_count":10}],"total_pages":2,"total_results":24}'
-  recorded_at: Fri, 06 Dec 2024 21:40:23 GMT
+  recorded_at: Sun, 08 Dec 2024 22:20:42 GMT
 recorded_with: VCR 6.3.1

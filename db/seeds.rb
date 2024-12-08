@@ -17,6 +17,10 @@ user3 = User.find_or_create_by!(name: "Lionel Messi", username: "futbol_geek") d
   user.password ="test123"
 end
 
+user4 = User.find_or_create_by!(name: "Carl Snarl", username: "cstobs") do |user|
+  user.password = "italian0J0nes"
+end
+
 movie = Movie.find_or_create_by!(id: 101, title: "Happy Feet", vote_average: 2.5, tmdb_id: 1234)
 
 viewing_party = ViewingParty.find_or_create_by!(
