@@ -30,7 +30,7 @@ class TmdbService
       language: 'en-US',
       page: 1
     })
-    parse_response[:results]
+    parse_response(response)[:results]
   end
 
   private
