@@ -83,4 +83,34 @@ RSpec.describe "Users API", type: :request do
       expect(json[:data][0][:attributes]).to_not have_key(:api_key)
     end
   end
+
+  describe "Get Individual Users" do
+    let!(:user) { create(:user, name: "Sebastian Kepler", username: "ReplicantBassy") }
+    context "happy path" do
+      it "returns the users profile info" do
+        get api_v1_user_path(user.id)
+
+        expect(response).to have_http_status(:ok)
+        json = JSON.parse(response.body, symbolize_names: true)[:data]
+
+        expect(json[:id]).to eq(user.id.to_s)
+        expect(json[:type]).to eq("user")
+        expect(json[:attributes][:name]).to eq("Sebastian Kepler")
+        expect(json[:attributes][:username]).to eq("ReplicantBassy")
+        expect(json[:attributes][:viewing_parties_hosted]).to eq([])
+        expect(json[:attributes][:viewing_parties_invited]).to eq([])
+      end
+    end
+
+    context "sad path" do
+      it "returns a 404 if user does not exist" do
+        get api_v1_user_path(id: 2082)
+
+        expect(response).to have_http_status(:not_found)
+        json = JSON.parse(response.body, symbolize_names: true)
+        expect(json[:message]).to eq("Invalid User ID")
+        expect(json[:status]).to eq(404)
+      end 
+    end
+  end
 end
