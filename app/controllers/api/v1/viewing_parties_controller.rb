@@ -17,8 +17,6 @@ class Api::V1::ViewingPartiesController < ApplicationController
   end
 
   def patch
-
-    Rails.logger.debug("Incoming Params: #{params.inspect}")
     viewing_party = find_viewing_party
     return unless viewing_party
 

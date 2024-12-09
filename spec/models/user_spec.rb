@@ -8,8 +8,7 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:password) }
     it { should have_secure_password }
     it { should have_secure_token(:api_key) }
-
-    it { should have_many(:hosted_parties).class_name('ViewingParty').with_foreign_key('host_id') }
-    it { should have_many(:invited_parties).through(:viewing_party_users).source(:viewing_party) }
+    it { should have_many(:viewing_parties_hosted).through(:viewing_party_users).source(:viewing_party) }
+    it { should have_many(:viewing_parties_invited).through(:viewing_party_users).source(:viewing_party) }    
   end
 end
