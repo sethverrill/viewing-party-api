@@ -63,6 +63,25 @@ RSpec.describe "Viewing Parties Endpoints", type: :request do
         error = JSON.parse(response.body)["error"]
         expect(error).to eq("Invalid movie information")
       end
+
+      it "returns error messages when ViewingParty creation fails" do
+        invalid_attributes = {
+          viewing_party: {
+            start_time: nil,
+            end_time: nil,
+            movie_id: nil,
+            movie_title: nil,
+            host_id: nil            
+          }
+        }
+
+        post "/api/v1/viewing_parties", params: invalid_attributes, as: :json
+
+        expect(response).to have_http_status(:unprocessable_entity)
+        json_response = JSON.parse(response.body)
+        puts json_response
+        expect(json_response).to have_key("error")
+      end
     end
   end
 

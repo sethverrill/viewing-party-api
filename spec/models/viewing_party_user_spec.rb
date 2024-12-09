@@ -39,4 +39,24 @@ RSpec.describe ViewingPartyUser, type: :model do
       expect(ViewingPartyUser.invitees).not_to include(host_user)
     end
   end
+
+  describe "Password security" do
+    it "stores the password securely for the host" do
+      expect(host.authenticate("jerseyMikesRox7")).to eq(host)
+      expect(host.password_digest).not_to eq("jerseyMikesRox7")
+    end
+  
+    it "stores the password securely for the invitee" do
+      expect(invitee.authenticate("Jolene123")).to eq(invitee)
+      expect(invitee.password_digest).not_to eq("Jolene123")
+    end
+  
+    it "does not authenticate with an incorrect password for the host" do
+      expect(host.authenticate("wrongPassword")).to be_falsey
+    end
+  
+    it "does not authenticate with an incorrect password for the invitee" do
+      expect(invitee.authenticate("wrongPassword")).to be_falsey
+    end
+  end
 end
