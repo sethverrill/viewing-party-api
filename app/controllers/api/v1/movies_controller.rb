@@ -17,11 +17,13 @@ class Api::V1::MoviesController < ApplicationController
 
   def show
     movie_details = TmdbService.get_movie(params[:id])
-    Rails.logger.debug "Movie details: #{movie_details.inspect}"
-
     if movie_details[:movie]
-      details_requested = params[:details] == "true"
-      render json: MovieSerializer.new(movie_details[:movie], details: details_requested).serializable_hash
+      details_requested = params[:details].to_s == "true"
+      full_movie_data = movie_details[:movie].merge(
+        credits: movie_details[:credits],
+        reviews: movie_details[:reviews]
+      )
+      render json: MovieSerializer.new(full_movie_data, details: details_requested).serializable_hash
     else
       render json: { error: "Movie not found" }, status: :not_found
     end

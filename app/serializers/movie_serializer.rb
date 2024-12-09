@@ -34,7 +34,7 @@ class MovieSerializer
     {
       title: movie[:title],
       vote_average: movie[:vote_average],
-      release_year: Date.parse(movie[:release_date]).year,
+      release_year: movie[:release_date] ? Date.parse(movie[:release_date]).year : nil,
       runtime: runtime(movie[:runtime]),
       genres: genres(movie[:genres]),
       summary: movie[:overview],
