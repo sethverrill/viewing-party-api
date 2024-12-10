@@ -1,7 +1,8 @@
 class Api::V1::ViewingPartiesController < ApplicationController
   def create
     movie_data = TmdbService.get_movie(params[:viewing_party][:movie_id])
-    if movie_data.nil? || movie_data[:title] != params[:viewing_party][:movie_title]
+
+    if movie_data[:movie].nil? || movie_data[:movie][:title] != params[:viewing_party][:movie_title]
       render json: { error: "Invalid movie information" }, status: :unprocessable_entity
       return
     end

@@ -18,7 +18,11 @@ RSpec.describe "Viewing Parties Endpoints", type: :request do
   end
 
   before do
-    allow(TmdbService).to receive(:get_movie).and_return({ title: movie.title }) 
+    allow(TmdbService).to receive(:get_movie).and_return({
+      movie: { title: movie.title },
+      credits: {},
+      reviews: {}
+    })
     viewing_party.users << user2
   end
 
